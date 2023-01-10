@@ -4,6 +4,7 @@ namespace $NAMESPACE$;
 
 use Filament\PluginServiceProvider;
 use Spatie\LaravelPackageTools\Package;
+use Modules\$NAME$\Filament\Pages\$NAME$Page;
 
 class $CLASS$ extends PluginServiceProvider
 {
