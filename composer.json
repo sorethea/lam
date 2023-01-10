@@ -18,5 +18,12 @@
     "require": {
         "php": ">=8.0",
         "laravel/framework": "~9.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sorethea\\Lam\\Providers\\LamServiceProvider"
+            ]
+        }
     }
 }
