@@ -1,0 +1,22 @@
+{
+    "name": "sorethea/lam",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sorethea\\Lam\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sorethea OK",
+            "email": "sorethea@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable" : true,
+    "require": {
+        "php": ">=8.0",
+        "laravel/framework": "~9.0"
+    }
+}
