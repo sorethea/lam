@@ -10,6 +10,12 @@ class ModuleGenerator extends Generator
 public function generateResources()
 {
     parent::generateResources();
+    if (GenerateConfigReader::read('page')->generate() === true) {
+        $this->console->call('make:lam-page', [
+            'name' => $this->getName()."Page",
+            'module' => $this->getName(),
+        ]);
+    }
     if (GenerateConfigReader::read('provider')->generate() === true) {
         $this->console->call('make:lam-auth-provider', [
             'module' => $this->getName(),
