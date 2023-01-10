@@ -44,7 +44,7 @@ class PageMakeCommand extends Command
         $resourceClass = null;
         $resourcePage = null;
 
-        $resourceInput = $this->option('resource') ?? $this->ask('(Optional) Resource (e.g. `UserResource`)');
+        $resourceInput = null; //$this->option('resource') ?? $this->ask('(Optional) Resource (e.g. `UserResource`)');
 
         if ($resourceInput !== null) {
             $resource = (string) Str::of($resourceInput)
