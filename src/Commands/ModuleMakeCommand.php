@@ -4,8 +4,8 @@ namespace Sorethea\Lam\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
-use Sorethea\Lam\Generators\ModuleGenerator;
 use Nwidart\Modules\Contracts\ActivatorInterface;
+use Sorethea\Lam\Generators\ModuleGenerator;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 
