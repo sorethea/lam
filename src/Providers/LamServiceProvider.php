@@ -13,6 +13,7 @@ use Sorethea\Lam\Commands\DumpCommand;
 use Sorethea\Lam\Commands\EnableCommand;
 use Sorethea\Lam\Commands\EventMakeCommand;
 use Sorethea\Lam\Commands\FactoryMakeCommand;
+use Sorethea\Lam\Commands\InstallCommand;
 use Sorethea\Lam\Commands\ModuleDeleteCommand;
 use Sorethea\Lam\Commands\ModuleMakeCommand;
 use Sorethea\Lam\Commands\PageMakeCommand;
@@ -37,6 +38,7 @@ class LamServiceProvider extends PackageServiceProvider
             EnableCommand::class,
             EventMakeCommand::class,
             FactoryMakeCommand::class,
+            InstallCommand::class,
             ProviderMakeCommand::class,
             ModuleMakeCommand::class,
             AuthProviderMakeCommand::class,
