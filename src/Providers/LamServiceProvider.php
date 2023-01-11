@@ -4,6 +4,15 @@ namespace Sorethea\Lam\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Sorethea\Lam\Commands\AuthProviderMakeCommand;
+use Sorethea\Lam\Commands\CommandMakeCommand;
+use Sorethea\Lam\Commands\ComponentClassMakeCommand;
+use Sorethea\Lam\Commands\ComponentViewMakeCommand;
+use Sorethea\Lam\Commands\ControllerMakeCommand;
+use Sorethea\Lam\Commands\DisableCommand;
+use Sorethea\Lam\Commands\DumpCommand;
+use Sorethea\Lam\Commands\EnableCommand;
+use Sorethea\Lam\Commands\EventMakeCommand;
+use Sorethea\Lam\Commands\FactoryMakeCommand;
 use Sorethea\Lam\Commands\ModuleDeleteCommand;
 use Sorethea\Lam\Commands\ModuleMakeCommand;
 use Sorethea\Lam\Commands\PageMakeCommand;
@@ -19,6 +28,15 @@ class LamServiceProvider extends PackageServiceProvider
     public function register()
     {
         $this->commands([
+            CommandMakeCommand::class,
+            ComponentClassMakeCommand::class,
+            ComponentViewMakeCommand::class,
+            ControllerMakeCommand::class,
+            DisableCommand::class,
+            DumpCommand::class,
+            EnableCommand::class,
+            EventMakeCommand::class,
+            FactoryMakeCommand::class,
             ProviderMakeCommand::class,
             ModuleMakeCommand::class,
             AuthProviderMakeCommand::class,
