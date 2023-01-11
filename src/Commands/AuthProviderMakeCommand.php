@@ -57,7 +57,7 @@ class AuthProviderMakeCommand extends GeneratorCommand
     {
         $module = $this->laravel['modules']->findOrFail($this->getModuleName());
 
-        return (new Stub('/module/auth-provider.stub', [
+        return (new Stub('/auth-provider.stub', [
             'NAMESPACE'            => $this->getClassNamespace($module),
             'CLASS'                => $this->getFileName(),
         ]))->render();

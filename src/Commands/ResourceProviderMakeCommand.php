@@ -57,7 +57,7 @@ class ResourceProviderMakeCommand extends GeneratorCommand
     {
         $module = $this->laravel['modules']->findOrFail($this->getModuleName());
 
-        return (new Stub('/module/resource-provider.stub', [
+        return (new Stub('/resource-provider.stub', [
             'NAMESPACE'            => $this->getClassNamespace($module),
             'CLASS'                => $this->getFileName(),
             'LOWER_NAME'           => $module->getLowerName(),

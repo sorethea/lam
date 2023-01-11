@@ -7,6 +7,7 @@ use Sorethea\Lam\Commands\AuthProviderMakeCommand;
 use Sorethea\Lam\Commands\ModuleDeleteCommand;
 use Sorethea\Lam\Commands\ModuleMakeCommand;
 use Sorethea\Lam\Commands\PageMakeCommand;
+use Sorethea\Lam\Commands\ProviderMakeCommand;
 use Sorethea\Lam\Commands\ResourceMakeCommand;
 use Sorethea\Lam\Commands\ResourceProviderMakeCommand;
 use Spatie\LaravelPackageTools\Package;
@@ -18,6 +19,7 @@ class LamServiceProvider extends PackageServiceProvider
     public function register()
     {
         $this->commands([
+            ProviderMakeCommand::class,
             ModuleMakeCommand::class,
             AuthProviderMakeCommand::class,
             ResourceProviderMakeCommand::class,
