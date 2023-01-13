@@ -290,7 +290,7 @@ class ModuleGenerator extends Generator
      */
     public function getFiles()
     {
-        return $this->module->config('stubs.files');
+        return $this->module->config('modules.files');
     }
 
     /**
@@ -362,7 +362,7 @@ class ModuleGenerator extends Generator
             $path = $this->module->getModulePath($this->getName()) . '/' . $folder->getPath();
 
             $this->filesystem->makeDirectory($path, 0755, true);
-            if (config('modules.stubs.gitkeep')) {
+            if (config('modules.modules.gitkeep')) {
                 $this->generateGitKeep($path);
             }
         }
@@ -460,7 +460,7 @@ class ModuleGenerator extends Generator
      */
     public function getReplacements()
     {
-        return $this->module->config('stubs.replacements');
+        return $this->module->config('modules.replacements');
     }
 
     /**
@@ -472,7 +472,7 @@ class ModuleGenerator extends Generator
      */
     protected function getReplacement($stub)
     {
-        $replacements = $this->module->config('stubs.replacements');
+        $replacements = $this->module->config('modules.replacements');
 
         if (!isset($replacements[$stub])) {
             return [];

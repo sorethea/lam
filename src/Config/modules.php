@@ -21,13 +21,13 @@ return [
     | Module Stubs
     |--------------------------------------------------------------------------
     |
-    | Default module stubs.
+    | Default module modules.
     |
     */
 
-    'stubs' => [
+    'modules' => [
         'enabled' => false,
-        'path' => base_path('stubs/module'),
+        'path' => base_path('modules/module'),
         'files' => [
             'routes/web' => 'Routes/web.php',
             'routes/api' => 'Routes/api.php',
