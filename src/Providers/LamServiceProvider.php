@@ -16,7 +16,7 @@ use Sorethea\Lam\Commands\FactoryMakeCommand;
 use Sorethea\Lam\Commands\InstallCommand;
 use Sorethea\Lam\Commands\ModuleDeleteCommand;
 use Sorethea\Lam\Commands\ModuleMakeCommand;
-use Sorethea\Lam\Commands\PageMakeCommand;
+use Sorethea\Lam\Commands\FilamentPageMakeCommand;
 use Sorethea\Lam\Commands\ProviderMakeCommand;
 use Sorethea\Lam\Commands\ResourceMakeCommand;
 use Sorethea\Lam\Commands\ResourceProviderMakeCommand;
@@ -44,7 +44,7 @@ class LamServiceProvider extends PackageServiceProvider
             AuthProviderMakeCommand::class,
             ResourceProviderMakeCommand::class,
             ResourceMakeCommand::class,
-            PageMakeCommand::class,
+            FilamentPageMakeCommand::class,
             ModuleDeleteCommand::class,
         ]);
     }
